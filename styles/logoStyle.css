@@ -1,0 +1,71 @@
+@keyframes pos__first {
+    0% {
+        transform: rotate(90deg) translate(1px, 0);
+    }
+
+    100% {
+        transform: rotate(90deg) translate(-1px, 0);
+    }
+}
+
+@keyframes pos__second {
+    0% {
+        transform: rotate(90deg) translate(-1px, -14px);
+    }
+
+    100% {
+        transform: rotate(90deg) translate(1px, -14px);
+    }
+}
+
+@keyframes pos__third {
+    0% {
+        transform: rotate(90deg) translate(1px, -22px);
+    }
+
+    100% {
+        transform: rotate(90deg) translate(-1px, -22px);
+    }
+}
+
+.logo {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.before {
+    font-size: 22px;
+    font-weight: 300;
+}
+
+.color__blue {
+    width: 12px;
+    height: 4px;
+    background-color: #009087;
+    transform: rotate(90deg);
+    border-radius: 2px;
+    margin-left: 10px;
+    animation: pos__first 1s ease alternate infinite;
+}
+
+.color__orange {
+    width: 16px;
+    height: 4px;
+    background-color: #009087;
+    border-radius: 2px;
+    transform: rotate(90deg) translate(0, -14px);
+    animation: pos__second 1s ease alternate infinite;
+}
+
+.color__red {
+    width: 20px;
+    height: 4px;
+    background-color: #009087;
+    border-radius: 2px;
+    transform: rotate(90deg) translate(0, -22px);
+    animation: pos__third 1s ease alternate infinite;
+}
