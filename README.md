@@ -13,7 +13,7 @@
 <a href="https://www.figma.com/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/figma-colored.svg" width="36" height="36" alt="Figma" /></a>
 </p>
 
-![image](https://user-images.githubusercontent.com/88341932/234695262-e7fdf7df-9a03-488e-b560-3c222387f09d.png)
+<img src='https://vlad-skrekoten.github.io/Landing-Page-Phone/'>![image](https://user-images.githubusercontent.com/88341932/234695262-e7fdf7df-9a03-488e-b560-3c222387f09d.png)
 
 
 
