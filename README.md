@@ -17,4 +17,4 @@
 
 
 
-https://vlad-skrekoten.github.io/Landing-Page-Phone/
+<center>https://vlad-skrekoten.github.io/Landing-Page-Phone/</center>
