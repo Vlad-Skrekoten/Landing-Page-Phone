@@ -5,7 +5,7 @@
 Поки робота не досконала ( поки по троху буду добавляти фічі всякі, більш коректно адаптувати свій код і робити більш адаптивну верстку сайту).
 
 
-### Example from Figma
+### Example from Figma:
 
 https://www.figma.com/file/6Wv6Jk1CoviQnyxojLp91I/Phone?node-id=0-1&t=NEnSO8bfUE0H9hCt-0
 
