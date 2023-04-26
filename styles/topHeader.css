@@ -1,0 +1,155 @@
+@keyframes pos__fifth {
+  0% {
+    transform: translate(0, -100px);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.header__burger-btn {
+  display: none;
+  position: relative;
+  margin-right: 5%;
+  width: 50px;
+  height: 40px;
+  border: none;
+  background-color: #FFF;
+}
+
+.header__burger-btn .burger__buttons {
+  position: absolute;
+  width: 40px;
+  height: 4px;
+  border-radius: 10px;
+  background: #000;
+  left: 5px;
+  transition: transform .5s, opacity .5s, background-color .5s;
+}
+
+.header.open .header__burger-btn {
+  background: #000;
+}
+
+header.open .header__burger-btn .burger__buttons {
+  background: #FFF;
+}
+
+.header__burger-btn .burger__buttons:nth-child(1) {
+  transform: translateY(-10px);
+}
+
+header.open .header__burger-btn .burger__buttons:nth-child(1) {
+  transform: translateY(0) rotate(45deg);
+}
+
+header.open .header__burger-btn .burger__buttons:nth-child(2) {
+  opacity: 0;
+}
+
+header.open .header__burger-btn .burger__buttons:nth-child(3) {
+  transform: translateY(0) rotate(135deg);
+}
+
+.header__burger-btn .burger__buttons:nth-child(3) {
+  transform: translateY(10px);
+}
+
+.button {
+  cursor: pointer;
+  color: #ffff;
+  width: 120px;
+  height: 40px;
+  padding: 5px 26px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0px 4px 6px -4px rgba(24, 39, 75, 0.12), inset 0px 8px 8px -4px rgba(24, 39, 75, 0.08);
+  border-radius: 30px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  padding: 10.5px, 35px;
+}
+
+.up {
+  animation: pos__fifth 1s ease;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 50px;
+  align-items: center;
+  width: 1440px;
+  margin-top: 32px;
+}
+
+.links {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  align-items: flex-start;
+  justify-content: center;
+  gap: 40px;
+  list-style-type: none;
+  text-align: center;
+}
+
+.link {
+  text-decoration: none;
+  color: #000;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  text-align: center;
+  transition: color .2s linear;
+}
+
+
+.link {
+  --primary-color: #111;
+  --hovered-color: #009087;
+  position: relative;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.link p {
+  margin: 0;
+  position: relative;
+  font-size: 20px;
+  color: var(--primary-color)
+}
+
+.link::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  left: 0;
+  bottom: -7px;
+  background: var(--hovered-color);
+  height: 2px;
+  transition: 0.3s ease-out;
+}
+
+.link p::before {
+  position: absolute;
+  content: "Subscribe";
+  width: 0%;
+  inset: 0;
+  color: var(--hovered-color);
+  overflow: hidden;
+  transition: 0.3s ease-out;
+}
+
+.link:hover {
+  color: #009087;
+}
+
+.link:hover::after {
+  width: 100%;
+}
