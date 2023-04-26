@@ -1,4 +1,4 @@
-## Landing-Page-Phone
+# Landing-Page-Phone
 
 
 Лендінг поки просто сайту на основі HTML,CSS ( зовсім трохи Java Script). 
